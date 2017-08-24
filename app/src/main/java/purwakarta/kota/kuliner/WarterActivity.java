@@ -159,6 +159,7 @@ public class WarterActivity extends AppCompatActivity {
                             severWarung.get(l).setDistance(jarak);
 
                         }
+                        // urutkan data dengan jarak terdekat
                         Collections.sort(severWarung, new Comparator<DetailWarung>() {
 
                             @Override
