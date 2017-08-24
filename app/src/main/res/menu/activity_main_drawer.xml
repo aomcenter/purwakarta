@@ -38,6 +38,16 @@
             android:id="@+id/nav_warung_terdekat"
             android:icon="@drawable/ic_placeholder"
             android:title="Warung Terdekat" />
+
+        <item
+            android:id="@+id/nav_event"
+            android:icon="@drawable/ic_placeholder"
+            android:title="Event" />
+
+        <item
+            android:id="@+id/nav_promo"
+            android:icon="@drawable/ic_placeholder"
+            android:title="Promo" />
     </group>
 
     <!--<item android:title="Communicate">-->
