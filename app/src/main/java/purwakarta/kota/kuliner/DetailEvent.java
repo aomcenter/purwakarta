@@ -1,15 +1,13 @@
-package purwakarta.kota.kuliner.adapter;
+package purwakarta.kota.kuliner;
 
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 
-import purwakarta.kota.kuliner.R;
-
-public class DetailPromoActivity extends AppCompatActivity {
+public class DetailEvent extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_detail_promo);
+        setContentView(R.layout.activity_detail_event);
     }
 }

@@ -146,6 +146,14 @@ public class MainActivity extends AppCompatActivity
                 Intent PromoIntent = new Intent(MainActivity.this, PromoActivity.class);
                 startActivity(PromoIntent);
                 break;
+            case R.id.nav_event:
+                Intent EventIntent = new Intent(MainActivity.this, EventActivity.class);
+                startActivity(EventIntent);
+                break;
+            case R.id.nav_blog:
+                Intent BlogIntent = new Intent(MainActivity.this, BlogActivity.class);
+                startActivity(BlogIntent);
+                break;
         }
 
         //replacing the fragment

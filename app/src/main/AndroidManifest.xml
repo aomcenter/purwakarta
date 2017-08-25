@@ -62,11 +62,23 @@
         <activity
             android:name=".PromoActivity"
             android:parentActivityName=".MainActivity" />
-        <activity android:name=".BlogActivity" />
-        <activity android:name=".EventActivity" />
-        <activity android:name=".adapter.DetailPromoActivity" />
-        <activity android:name=".DetailEventActivity" />
-        <activity android:name=".DetailBlogActivity"></activity>
+        <activity
+            android:name=".BlogActivity"
+            android:parentActivityName=".MainActivity" />
+        <activity
+            android:name=".EventActivity"
+            android:parentActivityName=".MainActivity" />
+
+
+        <activity
+            android:name=".DetailBlog"
+            android:parentActivityName=".MainActivity" />
+        <activity
+            android:name=".DetailEvent"
+            android:parentActivityName=".MainActivity" />
+        <activity
+            android:name=".DetailPromo"
+            android:parentActivityName=".PromoActivity"></activity>
     </application>
 
 </manifest>

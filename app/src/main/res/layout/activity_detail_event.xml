@@ -1,8 +1,27 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="purwakarta.kota.kuliner.DetailEventActivity">
+    android:orientation="vertical"
+    tools:context="purwakarta.kota.kuliner.DetailEvent">
 
-</android.support.constraint.ConstraintLayout>
+    <ImageView
+        android:id="@+id/detail_gambar_event"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:layout_marginBottom="30dp"
+        android:scaleType="fitXY" />
+
+    <TextView
+        android:id="@+id/deskripsi_event"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:padding="5dp"
+        android:text="Isi Deskripsi"
+        android:textSize="16sp"
+        android:textStyle="bold" />
+
+</LinearLayout>

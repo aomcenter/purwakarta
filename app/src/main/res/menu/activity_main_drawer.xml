@@ -48,6 +48,11 @@
             android:id="@+id/nav_promo"
             android:icon="@drawable/ic_placeholder"
             android:title="Promo" />
+
+        <item
+            android:id="@+id/nav_blog"
+            android:icon="@drawable/ic_placeholder"
+            android:title="Blog" />
     </group>
 
     <!--<item android:title="Communicate">-->

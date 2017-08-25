@@ -38,4 +38,14 @@ public interface ApiInterface {
 
     @GET("maranggi/api/getallblog")
     Call<List<Blog>> getAllBlog();
+
+    @GET("maranggi/api/getdetailpromo/{id}")
+    Call<List<Promo>> getDetailPromo(@Path("id") String id);
+
+    @GET("maranggi/api/getdetailevent/{id}")
+    Call<List<Event>> getDetailEvent(@Path("id") String id);
+
+    @GET("maranggi/api/getdetailblog/{id}")
+    Call<List<Blog>> getDetailBlog(@Path("id") String id);
+
 }
