@@ -100,6 +100,7 @@ public class MainActivity extends AppCompatActivity
         //initializing the fragment object which is selected
         switch (itemId) {
             case R.id.nav_home:
+                //angka ganti dengan kategori yang di inginkan beserta title
                 session.setKeyId("5","Kuliner Purwakarta");
                 fragment = new WarungFragment();
                 break;
@@ -108,6 +109,7 @@ public class MainActivity extends AppCompatActivity
                 fragment = new KategoriFragment();
                 break;
             case R.id.nav_menong:
+                //angka ganti dengan id warung yang diinginkan beserta title
                 session.setKeyId("75","Galeri Menong");
                 Intent menongIntent = new Intent(MainActivity.this, DetailActivity.class);
                 startActivity(menongIntent);
@@ -139,6 +141,10 @@ public class MainActivity extends AppCompatActivity
             case R.id.nav_warung_terdekat:
                 Intent warterIntent = new Intent(MainActivity.this, WarterActivity.class);
                 startActivity(warterIntent);
+                break;
+            case R.id.nav_promo:
+                Intent PromoIntent = new Intent(MainActivity.this, PromoActivity.class);
+                startActivity(PromoIntent);
                 break;
         }
 

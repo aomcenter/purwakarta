@@ -53,9 +53,20 @@
             android:name=".MapsActivity"
             android:label="@string/title_activity_maps"
             android:parentActivityName=".GalleryActivity" />
-        <activity android:name=".WarterActivity"
-            android:parentActivityName=".MainActivity"></activity>
-        <service android:name=".helper.GPSTracker"/>
+        <activity
+            android:name=".WarterActivity"
+            android:parentActivityName=".MainActivity" />
+
+        <service android:name=".helper.GPSTracker" />
+
+        <activity
+            android:name=".PromoActivity"
+            android:parentActivityName=".MainActivity" />
+        <activity android:name=".BlogActivity" />
+        <activity android:name=".EventActivity" />
+        <activity android:name=".adapter.DetailPromoActivity" />
+        <activity android:name=".DetailEventActivity" />
+        <activity android:name=".DetailBlogActivity"></activity>
     </application>
 
 </manifest>

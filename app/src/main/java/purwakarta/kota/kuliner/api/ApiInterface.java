@@ -2,9 +2,12 @@ package purwakarta.kota.kuliner.api;
 
 import java.util.List;
 
+import purwakarta.kota.kuliner.model.Blog;
 import purwakarta.kota.kuliner.model.DetailWarung;
+import purwakarta.kota.kuliner.model.Event;
 import purwakarta.kota.kuliner.model.GalerryWarung;
 import purwakarta.kota.kuliner.model.Kategori;
+import purwakarta.kota.kuliner.model.Promo;
 import purwakarta.kota.kuliner.model.Warung;
 import retrofit2.Call;
 import retrofit2.http.GET;
@@ -26,4 +29,13 @@ public interface ApiInterface {
 
     @GET("maranggi/api/getallwarung")
     Call<List<DetailWarung>> getAllWarung();
+
+    @GET("maranggi/api/getallpromo")
+    Call<List<Promo>> getAllPromo();
+
+    @GET("maranggi/api/getallevent")
+    Call<List<Event>> getAllEvent();
+
+    @GET("maranggi/api/getallblog")
+    Call<List<Blog>> getAllBlog();
 }
