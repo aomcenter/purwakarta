@@ -7,16 +7,16 @@
     tools:context="purwakarta.kota.kuliner.MapsActivity" >
 
 
-    <Button
-        android:id="@+id/button1"
-        android:layout_width="fill_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="20dp"
-        android:layout_gravity="center|bottom"
-        android:background="#C01831"
-        android:onClick="meonFb"
-        android:textColor="#ffffff"
-        android:layout_alignParentBottom="true"
-        android:text="Arahkan Saya"
-        android:textSize="20sp"/>
+    <!--<Button-->
+    <!--android:id="@+id/button1"-->
+    <!--android:layout_width="fill_parent"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:layout_marginTop="20dp"-->
+    <!--android:layout_gravity="center|bottom"-->
+    <!--android:background="#C01831"-->
+    <!--android:onClick="meonFb"-->
+    <!--android:textColor="#ffffff"-->
+    <!--android:layout_alignParentBottom="true"-->
+    <!--android:text="Arahkan Saya"-->
+    <!--android:textSize="20sp"/>-->
 </fragment>

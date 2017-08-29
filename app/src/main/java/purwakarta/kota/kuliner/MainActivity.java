@@ -65,20 +65,22 @@ public class MainActivity extends AppCompatActivity
         return true;
     }
 
-//    @Override
-//    public boolean onOptionsItemSelected(MenuItem item) {
-//        // Handle action bar item clicks here. The action bar will
-//        // automatically handle clicks on the Home/Up button, so long
-//        // as you specify a parent activity in AndroidManifest.xml.
-//        int id = item.getItemId();
-//
-//        //noinspection SimplifiableIfStatement
-//        if (id == R.id.action_settings) {
-//            return true;
-//        }
-//
-//        return super.onOptionsItemSelected(item);
-//    }
+    @Override
+    public boolean onOptionsItemSelected(MenuItem item) {
+        // Handle action bar item clicks here. The action bar will
+        // automatically handle clicks on the Home/Up button, so long
+        // as you specify a parent activity in AndroidManifest.xml.
+        int id = item.getItemId();
+        Intent intent = null;
+
+        //noinspection SimplifiableIfStatement
+        if (id == R.id.action_settings) {
+            Intent searchIntent = new Intent(MainActivity.this, SearchActivity.class);
+            startActivity(searchIntent);
+        }
+
+        return super.onOptionsItemSelected(item);
+    }
 
     @SuppressWarnings("StatementWithEmptyBody")
     @Override
@@ -110,31 +112,31 @@ public class MainActivity extends AppCompatActivity
                 break;
             case R.id.nav_menong:
                 //angka ganti dengan id warung yang diinginkan beserta title
-                session.setKeyId("75","Galeri Menong");
+                session.setKeyId("33", "Galeri Menong");
                 Intent menongIntent = new Intent(MainActivity.this, DetailActivity.class);
                 startActivity(menongIntent);
                 break;
 
             case R.id.nav_simping:
-                session.setKeyId("78","Simping Kaum");
+                session.setKeyId("36", "Simping Kaum");
                 Intent simpingIntent = new Intent(MainActivity.this, DetailActivity.class);
                 startActivity(simpingIntent);
                 break;
 
             case R.id.nav_peuyeum:
-                session.setKeyId("76","Peuyeum Bendul");
+                session.setKeyId("34", "Peuyeum Bendul");
                 Intent peuyeumIntent = new Intent(MainActivity.this, DetailActivity.class);
                 startActivity(peuyeumIntent);
                 break;
 
             case R.id.nav_tjeplak:
-                session.setKeyId("79","Tjeplak Kuliner");
+                session.setKeyId("37", "Tjeplak Kuliner");
                 Intent tjeplakIntent = new Intent(MainActivity.this, DetailActivity.class);
                 startActivity(tjeplakIntent);
                 break;
 
             case R.id.nav_pujasera:
-                session.setKeyId("77","Pujasera Srikandi");
+                session.setKeyId("35", "Pujasera Srikandi");
                 Intent pujaseraIntent = new Intent(MainActivity.this, DetailActivity.class);
                 startActivity(pujaseraIntent);
                 break;

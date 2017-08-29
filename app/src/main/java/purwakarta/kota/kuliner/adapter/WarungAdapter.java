@@ -25,6 +25,7 @@ public class WarungAdapter extends RecyclerView.Adapter<WarungViewHolder> {
     {
         this.mDataWarungs=dataWarungList;
         this.mContext=context;
+
     }
 
 
@@ -36,7 +37,7 @@ public class WarungAdapter extends RecyclerView.Adapter<WarungViewHolder> {
     }
 
     @Override
-    public void onBindViewHolder(WarungViewHolder holder, int position) {
+    public void onBindViewHolder(WarungViewHolder holder, final int position) {
         DataWarung dataWarung = mDataWarungs.get(position);
         holder.jdWr.setText(dataWarung.getNamaWarung());
         holder.ketWr.setText(dataWarung.getDeskripsi());
@@ -49,4 +50,5 @@ public class WarungAdapter extends RecyclerView.Adapter<WarungViewHolder> {
     public int getItemCount() {
         return mDataWarungs.size();
     }
+
 }

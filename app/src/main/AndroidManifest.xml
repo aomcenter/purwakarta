@@ -68,8 +68,6 @@
         <activity
             android:name=".EventActivity"
             android:parentActivityName=".MainActivity" />
-
-
         <activity
             android:name=".DetailBlog"
             android:parentActivityName=".MainActivity" />
@@ -78,7 +76,11 @@
             android:parentActivityName=".MainActivity" />
         <activity
             android:name=".DetailPromo"
-            android:parentActivityName=".PromoActivity"></activity>
+            android:parentActivityName=".PromoActivity" />
+
+        <activity
+            android:name=".SearchActivity"
+            android:parentActivityName=".MainActivity" />
     </application>
 
 </manifest>

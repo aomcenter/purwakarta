@@ -65,7 +65,6 @@ public class WarungFragment extends Fragment {
 
     private void getWarungan(String id) {
 
-
         ApiInterface apiService = ApiBase.getClient().create(ApiInterface.class);
 
         Call<Warung> mService = apiService.getWarung(id);
@@ -85,13 +84,14 @@ public class WarungFragment extends Fragment {
                         mRecyclerView.setAdapter(mAdapter);
                         initClick();
 
+
                     } else {
-                        Toast.makeText(getContext(), "euweuh dataan", Toast.LENGTH_SHORT).show();
+                        Toast.makeText(getContext(), "Data Kosong", Toast.LENGTH_SHORT).show();
 
                     }
                 } catch (Exception e) {
                     e.printStackTrace();
-                    Toast.makeText(getContext(), "gagal total", Toast.LENGTH_SHORT).show();
+                    Toast.makeText(getContext(), "Gagal", Toast.LENGTH_SHORT).show();
                 }
 
             }
@@ -125,4 +125,6 @@ public class WarungFragment extends Fragment {
         //Toast.makeText(getContext(),item,Toast.LENGTH_SHORT).show();
 
     }
+
+
 }
